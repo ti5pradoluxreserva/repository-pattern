@@ -1,8 +1,8 @@
 module.exports = {
-    dialect: 'postgres',
+    dialect: 'mysql',
     host: 'localhost',
-    username: 'docker',
-    password: 'docker',
+    username: 'root',
+    password: 'pradolux',
     database: 'sqlnode',
     define: {
         timestamps: true,
