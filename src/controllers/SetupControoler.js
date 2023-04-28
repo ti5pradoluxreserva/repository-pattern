@@ -1,9 +1,18 @@
 const Setup = require('../models/Setup');
 
 module.exports = {
-    async store(req, res) {
-        const { name, email } = req.body;
+    async index(req, res) {
+        const setups = await Setup.findAll();
 
-        const user = await
+        return res.json(setups)
+    },
+
+
+    async store(req, res) {
+        const newSetup = req.body;
+
+        const setup = await Setup.create({ newSetup });
+
+        return res.json(setup)
     }
 }

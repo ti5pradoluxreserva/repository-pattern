@@ -4,10 +4,16 @@ const UserController = require('./controllers/UserController');
 const AddressController = require('./controllers/AddressController');
 const TechController = require('./controllers/TechController');
 const ReportController = require("./controllers/ReportController");
+//const UserController = require('./controllers/SetupControoler');
+const SetupControoler = require("./controllers/SetupControoler");
+const ProductsController = require("./controllers/ProductsController");
 
 const routes = express.Router();
 
-routes.post('/setup')
+routes.post('/setup', SetupControoler.store)
+routes.get('/setup', SetupControoler.index)
+
+routes.post('/products', ProductsController.store);
 
 routes.get('/users', UserController.index)
 routes.post('/users', UserController.store)

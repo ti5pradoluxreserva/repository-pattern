@@ -1,4 +1,4 @@
-const { Model, Datatypes, DataTypes} = require('sequelize')
+const { Model, DataTypes} = require('sequelize')
 
 class Setup extends Model {
     static init(sequelize) {
