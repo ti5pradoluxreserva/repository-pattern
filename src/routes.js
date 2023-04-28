@@ -7,6 +7,8 @@ const ReportController = require("./controllers/ReportController");
 
 const routes = express.Router();
 
+routes.post('/setup')
+
 routes.get('/users', UserController.index)
 routes.post('/users', UserController.store)
 
