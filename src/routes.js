@@ -14,6 +14,7 @@ routes.post('/setup', SetupControoler.store)
 routes.get('/setup', SetupControoler.index)
 
 routes.post('/products', ProductsController.store);
+routes.get('/products', ProductsController.index)
 
 routes.get('/users', UserController.index)
 routes.post('/users', UserController.store)

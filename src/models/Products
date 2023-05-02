@@ -12,6 +12,9 @@ class Products extends Model {
             product_image_name: DataTypes.STRING,
             FILIAL: DataTypes.STRING,
             D_E_L_E_T_E: DataTypes.STRING
+        },
+        {
+            sequelize
         })
     }
 }
