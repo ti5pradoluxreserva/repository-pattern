@@ -1,8 +1,9 @@
 module.exports = {
     dialect: 'mssql',
-    host: 'localhost',
-    username: 'root',
-    password: 'pradolux',
+    host: '192.168.117.213',
+    username: 'DESKTOP-RII21CR\PRADOLUX',
+    port: '1433',
+    password: null,
     database: 'sqlnode',
     define: {
         timestamps: true,
