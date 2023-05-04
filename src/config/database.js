@@ -1,5 +1,5 @@
 module.exports = {
-    dialect: 'mysql',
+    dialect: 'mssql',
     host: 'localhost',
     username: 'root',
     password: 'pradolux',
